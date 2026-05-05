@@ -1,4 +1,4 @@
-# Hypertrophy Planner
+# Hyperflow
 
 A smart, fatigue-based workout tracker designed to optimize recovery and maximize hypertrophic gains. This application tracks your muscle fatigue using exponential decay models, ensuring you never overtrain a "red-zoned" muscle group.
 
@@ -7,23 +7,49 @@ A smart, fatigue-based workout tracker designed to optimize recovery and maximiz
 - **Dynamic Fatigue Tracking**: Automatically calculates muscle fatigue based on volume, RPE, and exercise intensity.
 - **Exponential Recovery**: Fatigue decays naturally over time, providing real-time readiness status for every muscle group.
 - **Smart Recommendations**: Suggests exercises and set targets based on your current recovery state.
-- **Dual Backend Support**: Comes with both a Python (FastAPI) and a Rust (Axum) implementation.
 - **Modern UI**: A sleek, responsive dashboard built with Svelte and TailwindCSS.
 
 ## Visual Walkthrough
 
-<p align="center">
-  <img src="assets/dashboard.png" width="45%" alt="Dashboard" />
-  <img src="assets/active_session.png" width="45%" alt="Active Session" />
-</p>
-<p align="center">
-  <img src="assets/history.png" width="45%" alt="History" />
-  <img src="assets/exercises.png" width="45%" alt="Exercises" />
-</p>
-<p align="center">
-  <img src="assets/draft.png" width="45%" alt="Drafting" />
-</p>
+<details>
+  <summary><b>Dashboard</b> <i>(Click to expand)</i></summary>
+  <br/>
+  <p align="center">
+    <img src="assets/dashboard.png" width="80%" alt="Dashboard" />
+  </p>
+</details>
 
+<details>
+  <summary><b>Active Session</b> <i>(Click to expand)</i></summary>
+  <br/>
+  <p align="center">
+    <img src="assets/active_session.png" width="80%" alt="Active Session" />
+  </p>
+</details>
+
+<details>
+  <summary><b>History</b> <i>(Click to expand)</i></summary>
+  <br/>
+  <p align="center">
+    <img src="assets/history.png" width="80%" alt="History" />
+  </p>
+</details>
+
+<details>
+  <summary><b>Exercises</b> <i>(Click to expand)</i></summary>
+  <br/>
+  <p align="center">
+    <img src="assets/exercises.png" width="80%" alt="Exercises" />
+  </p>
+</details>
+
+<details>
+  <summary><b>Drafting</b> <i>(Click to expand)</i></summary>
+  <br/>
+  <p align="center">
+    <img src="assets/draft.png" width="80%" alt="Drafting" />
+  </p>
+</details>
 
 ## Tech Stack
 
@@ -32,15 +58,10 @@ A smart, fatigue-based workout tracker designed to optimize recovery and maximiz
 - **Styling**: TailwindCSS
 - **State Management**: Svelte Stores
 
-### Backend (Python - Default)
+### Backend
 - **Framework**: FastAPI
 - **Database**: SQLModel / SQLite
 - **Environment**: Python 3.10+
-
-### Backend (Rust - Performance)
-- **Framework**: Axum
-- **Database**: SQLx / SQLite
-- **Performance**: High-concurrency ready
 
 ## Getting Started
 
@@ -57,16 +78,8 @@ A smart, fatigue-based workout tracker designed to optimize recovery and maximiz
    ```
 3. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-### Using the Rust Backend
-To use the Rust backend, switch to the `rust-backend` branch:
-```bash
-git checkout rust-backend
-```
-
-## API Documentation
-Once the backend is running, you can access the interactive Swagger docs at:
-- **Python**: [http://localhost:5100/docs](http://localhost:5100/docs)
-- **Rust**: [http://localhost:5100/swagger-ui](http://localhost:5100/swagger-ui) (if configured)
+### API Documentation
+Once the backend is running, you can access the interactive Swagger docs at: [http://localhost:5100/docs](http://localhost:5100/docs)
 
 ---
-*Built for lifters, by nerds.*
+*Built for lifters, by nerds*
